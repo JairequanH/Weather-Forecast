@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+
+        <div class="addressInput">
+            <input type="text" id="input" oninput="inputDebounce()" placeholder="Enter address...">
+            <button id="address-btn" onclick="getWeather()">Find Weather</button>
+            <ul id="addressDropdown"></ul>
+        </div>
+
+        <div class="weatherDisplay">
+            <h2 id="displayedLocation"></h2>
+            <ul id="weatherForecast"></ul>
+        </div>
+
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body{
+    background-color: #e0f0ff;
+    font-family: system-ui;
+    margin: 0;
+}
+
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* for inputs */
+#input{
+    width: 500px;
+    padding: 5px;
+    border: thin ridge black;
+    border-radius:10px;
+}
+
+#address-btn{
+    margin-left:10px;
+    background-color: rgb(72, 186, 206);
+    padding: 5px;
+    border: medium ridge rgb(12, 46, 100);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#address-btn:hover{
+    background-color: rgb(37, 151, 183);
+}
+
+.addressInput{
+    position: relative;
+}
+
+.populated{
+    position: absolute;
+    width: 500px;
+    list-style: none;
+    background-color:rgb(254, 254, 254);
+    border: thin ridge black;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+#addressDropdown li{
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: medium dotted black;
+}
+
+#addressDropdown li:last-child{
+    border-bottom: none;
+}
+
+#addressDropdown li:hover{
+    background-color: bisque;
+}
+
+.selected{
+   background-color: bisque;
+}
+
+
+/* for forecast */
+#weatherForecast{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px 10px;
+}
+
+#weatherForecast li{
+    border: thin ridge black;
+    background-color:azure;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    min-width: 100px;
+}
+
+#weatherForecast li p{
+    margin: 0;
+}
+
+.cardImg{
+    font-size: 3rem;
+}
+
+.cardWeather{
+    text-transform: capitalize;
+}
+

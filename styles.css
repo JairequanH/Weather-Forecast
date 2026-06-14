@@ -98,3 +98,8 @@ body{
     text-transform: capitalize;
 }
 
+@media (max-width: 600px) {
+    #input {
+        width: 90%;
+    }
+}
